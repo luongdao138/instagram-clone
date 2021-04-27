@@ -3,7 +3,6 @@ import { useEffect } from 'react';
 import { getPhotosByUserId } from '../../services/firebase';
 import Header from './Header';
 import Photos from './Photos';
-import UpdateAvatar from './UpdateAvatar';
 
 const initState = {
   profile: {},

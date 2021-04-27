@@ -69,7 +69,6 @@ const AddPost = () => {
             onChange={(e) => setCaption(e.target.value)}
           />
           <input
-            type='text'
             name='imageSrc'
             className='add-post__form__input'
             type='file'

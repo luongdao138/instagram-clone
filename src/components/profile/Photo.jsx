@@ -1,7 +1,6 @@
 import { Grid, Dialog } from '@material-ui/core';
 import React, { useState } from 'react';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import Image from '../../components/post/Image';
 import Post from '../../components/post';
 import { useEffect } from 'react';
 

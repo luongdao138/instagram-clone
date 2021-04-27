@@ -21,7 +21,7 @@ const Profile = () => {
     }
 
     getUser();
-  }, [username]);
+  }, [username, history]);
 
   return (
     <div>

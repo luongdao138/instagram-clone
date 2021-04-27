@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import FirebaseContext from '../../context/firebase';
 import useUser from '../../hooks/useUser';
 import SendIcon from '@material-ui/icons/Send';

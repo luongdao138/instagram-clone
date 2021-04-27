@@ -158,7 +158,7 @@ export const getPhotosByUserId = async (user, cb) => {
 };
 
 export const isUserFollowingProfile = async (userId, profileId) => {
-  const result = await firebase
+  await firebase
     .firestore()
     .collection('usera')
     .where('userId', '==', userId)

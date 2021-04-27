@@ -3,7 +3,6 @@ import FirebaseContext from '../../context/firebase';
 import useUser from '../../hooks/useUser';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import FavoriteIcon from '@material-ui/icons/Favorite';
-import { IconButton } from '@material-ui/core';
 
 const Actions = ({ docId, totalLikes, likedPhoto, handleFocus }) => {
   const { user } = useUser();
