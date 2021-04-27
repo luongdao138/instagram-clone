@@ -1,0 +1,74 @@
+nav {
+  /* width: 75%; */
+  margin: auto;
+  padding: 12px 150px;
+  background: #fff;
+  border-bottom: 1px solid rgb(219, 219, 219);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.not-found__main {
+  padding: 20px;
+}
+
+img.not-found__logo {
+  width: 100px;
+}
+
+button.not-found__button {
+  background: #0095f6;
+  border: none;
+  outline: none;
+  /* width: 100%; */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+button.not-found__button.signup {
+  background-color: transparent;
+  color: #0095f6;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__avatar {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 12px 80px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 12px 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav {
+    padding: 12px 20px;
+  }
+  h3.not-found__main__title {
+    font-size: 18px;
+  }
+  button.not-found__button,
+  p.not-found__main__msg {
+    font-size: 12px;
+  }
+}

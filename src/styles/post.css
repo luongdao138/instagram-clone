@@ -1,0 +1,141 @@
+.post {
+  border: 1px solid rgb(219, 219, 219);
+  margin-bottom: 30px;
+  /* padding: 8px; */
+  border-radius: 2px;
+}
+
+.post__header {
+  padding: 10px;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.post__header__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+a.post__header__link {
+  text-decoration: none;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+
+p.post__header__username {
+  margin: 0;
+  margin-left: 10px;
+  color: #333;
+  font-weight: 700;
+}
+
+.post__image {
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.post__actions {
+  padding: 10px;
+}
+
+.post__actions_msg-icon {
+  width: 25px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.post__actions_number-like span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.post__footer {
+  padding: 10px 10px 0 10px;
+}
+
+p.post__footer__caption {
+  margin: 0;
+  margin-top: -15px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.9);
+}
+
+p.post__footer__caption strong {
+  font-weight: 700;
+  margin-right: 7px;
+  color: black;
+  font-size: 13px;
+}
+
+.post__comments {
+  padding: 10px;
+  padding-bottom: 50px;
+  padding-top: 5px;
+  position: relative;
+}
+
+.post__conmments_viewmore {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+p.post_comments_item {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(0, 0, 0, 0.9);
+}
+
+p.post_comments_item a {
+  font-weight: 700;
+  margin-right: 7px;
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.post__comments_date {
+  margin: 0;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.5);
+}
+
+input.post__add-comment__input {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgb(219, 219, 219);
+  padding: 10px 10px;
+  outline: none;
+  /* border-radius: 2px; */
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+}
+
+.post__add-comment__icon {
+  background: rgb(219, 219, 219);
+  position: absolute;
+  right: 0px;
+  bottom: -1px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #a8a1a1;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}

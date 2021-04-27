@@ -1,0 +1,119 @@
+.login {
+  width: 85%;
+  margin: auto;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: auto;
+}
+
+.login__left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login form,
+.login__signup {
+  border: 1px solid rgb(219, 219, 219);
+  padding: 40px;
+  background: #fff;
+}
+
+.login__signup {
+  padding: 20px;
+}
+
+.login__signup p {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.login__signup p strong {
+  font-weight: 500;
+  color: #0095f6;
+  cursor: pointer;
+}
+
+.login__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login__left__image {
+  width: 100%;
+  object-fit: contain;
+  /* height: 500px; */
+}
+
+.login__right__logo {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+span.login__error {
+  font-size: 12px;
+  display: block;
+  font-weight: 500;
+  color: red;
+  text-align: left;
+}
+.login__right__input {
+  width: 100%;
+  border: 1px solid rgb(219, 219, 219);
+  padding: 10px 10px;
+  outline: none;
+  border-radius: 2px;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.login__right__input:focus {
+  border: 1px solid rgba(0, 0, 0, 0.356);
+}
+
+.login__right__button {
+  background: #0095f6;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .login__right {
+    max-width: 420px;
+  }
+  .login__left {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .login__right form,
+  .login__signup {
+    border: none;
+    background-color: #fafafa;
+    padding: 20px;
+  }
+}

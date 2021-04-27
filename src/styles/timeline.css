@@ -1,0 +1,12 @@
+.timeline__message {
+  text-align: center;
+  font-size: 30px;
+}
+
+button.MuiButtonBase-root.MuiIconButton-root.timeline__add-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ccc;
+  color: #fff;
+}
