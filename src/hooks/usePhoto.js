@@ -8,11 +8,13 @@ export default function usePhotos() {
 
   useEffect(() => {
     async function getTimelinePhotos() {
-      const { userId, following } = user;
-      if (following && following.length > 0) {
-        // get the photos if length > 0
-        await getPhotos(userId, following, setPhotos);
-      } else if (following && following.length === 0) setPhotos([]);
+      if (user) {
+        const { userId, following } = user;
+        if (following && following.length > 0) {
+          // get the photos if length > 0
+          await getPhotos(userId, following, setPhotos);
+        } else if (following && following.length === 0) setPhotos([]);
+      }
     }
 
     getTimelinePhotos();

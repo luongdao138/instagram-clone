@@ -132,7 +132,7 @@ const Header = ({ photoCount, profile, dispatch }) => {
         </div>
       </Dialog>
       <div className='user-profile__wrapper'>
-        <div>
+        <div className='image__wrapper'>
           <button
             disabled={!isOwn}
             style={{ cursor: isOwn ? 'pointer' : 'revert' }}

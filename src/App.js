@@ -12,6 +12,7 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 const AddPost = lazy(() => import('./pages/AddPost'));
 const Profile = lazy(() => import('./pages/Profile'));
+const EditAccount = lazy(() => import('./pages/EditAccount'));
 
 function App() {
   const { user } = useAuthListener();
@@ -26,6 +27,9 @@ function App() {
             </ProtectedRoute>
             <ProtectedRoute path={routes.ADD} user={user}>
               <AddPost />
+            </ProtectedRoute>
+            <ProtectedRoute path={routes.EDIT_PROFILE} user={user}>
+              <EditAccount />
             </ProtectedRoute>
 
             <ProtectedRoute path={routes.PROFILE} user={user}>

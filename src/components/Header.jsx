@@ -40,11 +40,13 @@ const Header = () => {
           <IconButton onClick={() => firebase.auth().signOut()}>
             <ExitToAppIcon />
           </IconButton>
-          <img
-            src={user.photoURL ? user.photoURL : '/images/avatars/user.png'}
-            className='header__avatar'
-            alt=''
-          />
+          <Link to={`/p/${user.username}`}>
+            <img
+              src={user.photoURL ? user.photoURL : '/images/avatars/user.png'}
+              className='header__avatar'
+              alt=''
+            />
+          </Link>
         </div>
       )}
     </nav>

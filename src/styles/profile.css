@@ -194,7 +194,7 @@ input.add-avatar__input {
   box-sizing: border-box;
 }
 
-.user-profile__wrapper button {
+.image__wrapper button {
   border-radius: 50%;
   border: none;
   outline: none;
