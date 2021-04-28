@@ -26,7 +26,7 @@ const Comments = ({ docId, comments: allComments, posted, commentInput }) => {
         </p>
       )}
 
-      {comments.slice(0, 3).map((item) => {
+      {comments.slice().map((item) => {
         return (
           <p
             className='post_comments_item'
