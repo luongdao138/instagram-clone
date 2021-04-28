@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = ({ caption, username }) => {
   return (
     <div className='post__footer'>
       <p className='post__footer__caption'>
-        <strong>{username}</strong>
+        <Link style={{ textDecoration: 'none' }} to={`/p/${username}`}>
+          <strong>{username}</strong>
+        </Link>
         {caption}
       </p>
     </div>
